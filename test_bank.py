@@ -60,7 +60,6 @@ def test_bank_balance(setup_fixtures, monkeypatch, capfd):
     expected_outputs = {
         (0, '123'): '\n*** Balance ***\npw ok!\nBalance: 500\n',
         (0, '456'): '\n*** Balance ***\nwrong password\nprogram ended\n',
-        # Add more mappings as needed
     }
 
     for input_tuple, expected_output in expected_outputs.items():
@@ -123,7 +122,6 @@ def test_bank_show(setup_fixtures, monkeypatch, capfd):
     expected_outputs = {
         (0, '123'): '\n*** Show info account ***\npw ok!\nAccount N: 0 Name: Joe Balance: 500\n',
         (0, '456'): '\n*** Show info account ***\nwrong password\nprogram ended\n',
-        # Add more mappings as needed
     }
 
     for input_tuple, expected_output in expected_outputs.items():
